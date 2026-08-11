@@ -1,4 +1,4 @@
-#Password Breach Checker makes use of HaveIBeenPwned's API.
+#Password Strength & Breach Checker makes use of HaveIBeenPwned's API.
 #HaveIBeenPwned supports k-anonymity meaning that it doesnt send full passwords in one go and hashes them while you receive the parts of your passwords back unhashed.
 #Your passwords are completely safe.
 
