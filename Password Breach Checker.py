@@ -26,15 +26,6 @@ COMMON_PASSWORDS = {
 # ---------------------------------------------------------------------------
 
 def calculate_entropy(password: str) -> float:
-    """
-    Estimate password entropy in bits.
-
-    Entropy = length * log2(pool_size), where pool_size is the size of the
-    character set the password draws from (lowercase, uppercase, digits,
-    symbols). This is a common approximation -- it assumes characters are
-    chosen randomly from that pool, which is generous for human-made
-    passwords, but it's still a useful relative measure of strength.
-    """
     pool_size = 0
     if re.search(r"[a-z]", password):
         pool_size += 26
